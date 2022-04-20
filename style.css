@@ -30,10 +30,10 @@ body {
     border: none;
 
     position: absolute;
-    width: 680px;
-    height: 48px;
     left: 240px;
     top: 168px;
+
+    resize:none;
 
     font-family: 'Inter';
     font-style: normal;

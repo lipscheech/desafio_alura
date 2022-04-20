@@ -1,4 +1,6 @@
-var input = document.querySelector("input");
+var input = document.querySelector("textarea");
+// document.getElementById('containerWithText').style.visibility = "none"
+
 
 console.log(input.value);
 
@@ -21,6 +23,8 @@ function criptografar() {
     })
 
     console.log(text.join(''));
+    document.getElementById('containerText').style.visibility = "none"
+    document.getElementById('containerWithText').style.visibility = "block"
     return input.value = text.join('')
 }
 
