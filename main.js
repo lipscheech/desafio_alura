@@ -1,5 +1,4 @@
 var input = document.querySelector("input");
-input.focus()
 
 console.log(input.value);
 
@@ -22,7 +21,7 @@ function criptografar() {
     })
 
     console.log(text.join(''));
-    return text.join('')
+    return input.value = text.join('')
 }
 
 function descriptografar() {
