@@ -1,114 +1,194 @@
-html {
-    display: flex;
-    justify-content: center;
-}
-
 body {
-    width: 1440px;
-    height: 1024px;
-    top: 622px;
     background-color: #f3f5fc;
 }
 
-.logo img {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
+.bg-transparent {
+    background: transparent !important;
 }
 
-.text {
-    /* Digite seu texto */
-    background: transparent;
+.container {
+    height: 100%;
+}
 
+.container header {
+    height: 5rem !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card {
+    height: 100%;
     border: none;
 
-    position: absolute;
-    left: 240px;
-    top: 168px;
+}
 
-    resize:none;
+.card .card-body {
+
+    margin-top: 10rem;
+    height: 50%;
+
+}
+
+.card .card-body textarea {
+    width: 100%;
+    border: none;
+    resize: none;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
+
+    color: #0A3871;
+
+}
+
+.card .card-body textarea::placeholder {
+    color: #0A3871;
+}
+
+
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+}
+
+.info img {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px .5px;
+}
+
+.info p {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8rem;
     line-height: 150%;
-    /* identical to box height, or 48px */
+
+    color: #495057;
+    opacity: 0.8;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
 
 
-    /* Dark blue/dark-blue-300 */
-
-    color: #0A3871;
+.buttonsEncrypt {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 
 }
 
-.text::placeholder {
-    color: #0A3871;
-}
-
-.containerText {
-    /* position: absolute; */
-    width: 400px;
-    height: 944px;
-    margin-left: 1000px;
-    margin-top: 40px;
+ .buttonsEncrypt .encrypt, .decrypt {
 
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+
+    width: 20rem;
+    height: 4.1rem;
+
+
+    background: #0A3871;
+    border-radius: 24px;
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+}
+
+
+.buttonsEncrypt .encrypt p, .buttonsEncrypt .decrypt p{
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0 .5rem;
+}
+
+.buttonsEncrypt .encrypt p {
+    color: #FFFFFF;
+}
+
+.buttonsEncrypt .decrypt {
+
+    background: #D8DFE8;
+
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 24px;
+}
+
+.buttonsEncrypt .decrypt p {
+    color: #0A3871;
+}
+
+.card-crypto {
+    width: 24rem;
+    height: 50rem;
+    padding: auto;
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-
-
-    /* shadow */
+    align-items: center;
 
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-}
-
-.containerText img {
-    position: absolute;
-    width: 336px;
-    height: 304px;
-    /* left: 1032px; */
-    top: 283px;
+    border-radius: 2rem;
 
 }
 
-.containerText .boxText {
-    /* Frame 5 */
+.card-crypto img{
+    width: 20rem;
 
+    margin-top: auto;
+}
 
-    /* Auto layout */
-
+.card-crypto .boxText {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-    position: absolute;
-    width: 336px;
-    height: 122px;
-    top: 619px;
-
+    justify-content: center;
 }
 
-.containerText .boxText span {
-    position: static;
-    width: 336px;
-    height: 58px;
-    left: 0px;
-    top: 0px;
+
+.card-crypto .boxText span, .card-crypto .boxText p {
+
+    width: 90%;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.3rem;
     line-height: 120%;
     /* or 29px */
 
@@ -125,256 +205,15 @@ body {
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-    margin: 16px 0px;
+    margin: 1rem 0 1.2rem 0;
 }
 
-.containerText .boxText p {
-    position: static;
-    width: 336px;
-    height: 48px;
-    left: 0px;
-    top: 74px;
-
-    font-family: 'Inter';
-    font-style: normal;
+.card-crypto .boxText p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 150%;
-    /* or 24px */
-
-    text-align: center;
-
-    /* Gray/gray-400 */
 
     color: #495057;
 
-
-    /* Inside auto layout */
-
-    flex: none;
     order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 16px 0px;
-}
-
-.containerWithText p {
-    position: absolute;
-    width: 336px;
-    height: 781px;
-    left: 1032px;
-    top: 72px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
-    /* or 36px */
-
-
-    /* Gray/gray-400 */
-
-    color: #495057;
-}
-
-.info {
-    /* Frame 1 */
-
-
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-
-    position: absolute;
-    width: 252px;
-    height: 18px;
-    left: 240px;
-    top: 851px;
-
-}
-
-.info img {
-    width: 16px;
-    height: 16px;
-    left: 0px;
-    top: 1px;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 8px;
-}
-
-.info p {
-
-    width: 228px;
-    height: 18px;
-    left: 24px;
-    top: 0px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    /* identical to box height, or 18px */
-
-
-    /* Gray/gray-400 */
-
-    color: #495057;
-
-    opacity: 0.8;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 8px;
-}
-
-
-.buttonsEncrypt {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: absolute;
-    width: 680px;
-    height: 67px;
-    left: 240px;
-    top: 885px;
-}
-
-.buttonsEncrypt .encrypt {
-    /* Button */
-
-
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-
-    position: static;
-    width: 328px;
-    height: 67px;
-    left: 0px;
-    top: 0px;
-
-    /* Dark blue/dark-blue-300 */
-
-    background: #0A3871;
-    border-radius: 24px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 24px;
-}
-
-.buttonsEncrypt .encrypt p {
-    /* Button */
-
-
-    position: static;
-    width: 280px;
-    height: 19px;
-    left: 24px;
-    top: 24px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-
-    /* White */
-
-    color: #FFFFFF;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-    margin: 0px 8px;
-}
-
-.buttonsEncrypt .decrypt {
-    /* Button */
-
-
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-
-    position: static;
-    width: 328px;
-    height: 67px;
-    left: 352px;
-    top: 0px;
-
-    /* Light gray */
-
-    background: #D8DFE8;
-    /* Dark blue/dark-blue-300 */
-
-    border: 1px solid #0A3871;
-    box-sizing: border-box;
-    border-radius: 24px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 24px;
-}
-
-.buttonsEncrypt .decrypt p {
-    /* Button */
-
-
-    position: static;
-    width: 280px;
-    height: 19px;
-    left: 24px;
-    top: 24px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-
-    /* Dark blue/dark-blue-300 */
-
-    color: #0A3871;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-    margin: 0px 8px;
 }

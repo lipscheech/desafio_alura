@@ -23,8 +23,8 @@ function criptografar() {
     })
 
     console.log(text.join(''));
-    document.getElementById('containerText').style.visibility = "none"
-    document.getElementById('containerWithText').style.visibility = "block"
+    // document.getElementById('text').style.visibility = "none"
+    // document.getElementById('containerWithText').style.visibility = "block"
     return input.value = text.join('')
 }
 

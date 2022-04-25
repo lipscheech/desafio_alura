@@ -19,41 +19,46 @@
 </head>
 
 <body>
-    <div class="logo">
-        <img src="./assets/Vector.svg" alt="">
-    </div>
+    <div class="container d-flex flex-wrap justify-content-between p-0">
+        <header class="col-12">
+            <img src="./assets/Vector.svg" alt="">
+        </header>
+        <div class="card col-8 bg-transparent">
+            <div class="card-body">
+                <!-- <div id="containerWithText" class="containerText containerWithText bg-white visually-hidden">
 
-    <div id="containerText" class="containerText bg-white">
-        <img src="./assets/High_quality_products.svg" alt="">
-        <div class="boxText">
-            <span>Nenhuma mensagem encontrada</span>
-            <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+
+                </div> -->
+
+                <textarea id="text" class="bg-transparent" placeholder="Digite seu texto" rows="10" cols="40"></textarea>
+                <!-- <input type="text" class="text" placeholder="Digite seu texto" rows="5" cols="40"> -->
+            </div>
+            <div class="info">
+                <img src="assets/bi_exclamation-circle-fill.svg" alt="">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="buttonsEncrypt">
+                <button class="encrypt" onclick="criptografar()">
+                    <p>Criptografar</p>
+                </button>
+                <button class="decrypt" onclick="descriptografar()">
+                    <p>Descriptografar</p>
+                </button>
+            </div>
         </div>
-    </div>
 
-    <div id="containerWithText" class="containerText containerWithText bg-white visually-hidden">
-
-        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-
-    </div>
-
-    <textarea class="text" placeholder="Digite seu texto" rows="10" cols="40"></textarea>
-    <!-- <input type="text" class="text" placeholder="Digite seu texto" rows="5" cols="40"> -->
-    <div class="info">
-        <img src="assets/bi_exclamation-circle-fill.svg" alt="">
-        <p>Apenas letras minúsculas e sem acento.</p>
-    </div>
-    <div class="buttonsEncrypt">
-        <button class="encrypt" onclick="criptografar()">
-            <p>Criptografar</p>
-        </button>
-        <button class="decrypt" onclick="descriptografar()">
-            <p>Descriptografar</p>
-        </button>
-    </div>
-    <!-- <footer>
+        <div class="card card-crypto col-4 bg-white">
+            <img src="./assets/High_quality_products.svg" alt="">
+            <div class="boxText">
+                <span>Nenhuma mensagem encontrada</span>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+        </div>
+        <!-- <footer>
         <span><Strong>Dev</Strong> Filipe Cavalcante dos Santos</span>
     </footer> -->
+    </div>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
