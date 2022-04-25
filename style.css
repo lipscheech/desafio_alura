@@ -1,3 +1,4 @@
+
 body {
     background-color: #f3f5fc;
 }
@@ -84,18 +85,18 @@ body {
 }
 
 
-.buttonsEncrypt {
+/* .buttonsEncrypt {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 
-}
+} */
 
- .buttonsEncrypt .encrypt, .decrypt {
+.encrypt,
+.decrypt {
 
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     padding: 24px;
 
     width: 20rem;
@@ -113,7 +114,8 @@ body {
 }
 
 
-.buttonsEncrypt .encrypt p, .buttonsEncrypt .decrypt p{
+.encrypt p,
+.decrypt p {
 
 
     font-family: 'Inter';
@@ -129,11 +131,11 @@ body {
     margin: 0 .5rem;
 }
 
-.buttonsEncrypt .encrypt p {
+.encrypt p {
     color: #FFFFFF;
 }
 
-.buttonsEncrypt .decrypt {
+.decrypt {
 
     background: #D8DFE8;
 
@@ -148,27 +150,27 @@ body {
     margin: 0 1.5rem;
 }
 
-.buttonsEncrypt .decrypt p {
+.decrypt p {
     color: #0A3871;
 }
 
 .card-crypto {
-    width: 24rem;
     height: 50rem;
     padding: auto;
-    display: flex;  
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    margin: 0 1.5rem 0 1.5rem;
 
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 2rem;
 
 }
 
-.card-crypto img{
-    width: 20rem;
+.card-crypto img {
 
     margin-top: auto;
 }
@@ -182,9 +184,10 @@ body {
 }
 
 
-.card-crypto .boxText span, .card-crypto .boxText p {
+.card-crypto .boxText span,
+.card-crypto .boxText p {
 
-    width: 90%;
+    width: 80%;
 
     font-family: 'Inter';
     font-style: normal;
@@ -218,3 +221,17 @@ body {
 
     order: 1;
 }
+
+/* @media screen and (min-width: 994px) {
+
+    .card {
+        width: 100%;
+
+    }
+
+    .card-crypto {
+        margin: 2rem 0 2rem 0;
+        height: 50%;
+    }
+
+} */
