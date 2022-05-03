@@ -159,14 +159,20 @@ body {
 .card-crypto img {
 
     margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .card-crypto .boxText {
+    height: 100%;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
     justify-content: center;
+    align-items: center;
+
 }
 
 
@@ -198,6 +204,7 @@ body {
 }
 
 .card-crypto .boxText p {
+    margin-left: 40px;
     font-weight: 400;
     font-size: 1rem;
     line-height: 150%;
@@ -207,16 +214,17 @@ body {
     order: 1;
 }
 
-/* @media screen and (min-width: 994px) {
+#boxAfter {
+    height: 100%;
+    padding: 2rem 0 2rem 0;
+    display: none;
+}
 
-    .card {
-        width: 100%;
+#boxAfter p {
 
-    }
-
-    .card-crypto {
-        margin: 2rem 0 2rem 0;
-        height: 50%;
-    }
-
-} */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+}

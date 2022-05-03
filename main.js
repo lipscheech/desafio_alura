@@ -1,5 +1,9 @@
 var input = document.querySelector("textarea");
 // document.getElementById('containerWithText').style.visibility = "none"
+let textBoxText = document.getElementById('textBoxText')
+let boxText = document.getElementById('boxText')
+let boxTextAfter = document.getElementById('boxAfter')
+
 
 
 console.log(input.value);
@@ -25,7 +29,9 @@ function criptografar() {
     console.log(text.join(''));
     // document.getElementById('text').style.visibility = "none"
     // document.getElementById('containerWithText').style.visibility = "block"
-    return input.value = text.join('')
+    boxText.style.setProperty('display', 'none')
+    boxTextAfter.style.setProperty('display', 'block')
+    textBoxText.textContent = text.join('')
 }
 
 function descriptografar() {
@@ -37,9 +43,9 @@ function descriptografar() {
     text = text.replaceAll('ufat', 'u')
 
 
-    console.log(text)
+    
 
-    return input.value = text;
+    // return input.value = text;
 
     // console.log(text.join(''));
     // return input.value = text.join('')
