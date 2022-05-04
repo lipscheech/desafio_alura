@@ -19,31 +19,24 @@
 </head>
 
 <body>
-    <div class="container d-flex flex-wrap justify-content-between p-0">
+    <div class="container d-flex flex-wrap justify-content-between p-0 h-100 px-lg-0 px-1">
         <header class="d-flex justify-content-start align-items-center col-12 mt-3">
             <img src="./assets/Vector.svg" alt="">
         </header>
         <div class="card d-flex col-12 col-lg-8 bg-transparent">
             <div class="card-body">
-                <!-- <div id="containerWithText" class="containerText containerWithText bg-white visually-hidden">
-
-                    <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-
-                </div> -->
-
                 <textarea id="text" class="bg-transparent" placeholder="Digite seu texto" rows="10"
                     cols="40"></textarea>
-                <!-- <input type="text" class="text" placeholder="Digite seu texto" rows="5" cols="40"> -->
             </div>
             <div class="info">
                 <img src="assets/bi_exclamation-circle-fill.svg" alt="">
                 <p>Apenas letras minúsculas e sem acento.</p>
             </div>
-            <div class="d-flex justify-content-lg-start justify-content-center col-12 me-1">
-                <button class="encrypt col-6" onclick="criptografar()">
+            <div class="d-flex justify-content-lg-start justify-content-center col-12 col-lg-9 mb-lg-0 mb-3">
+                <button class="encrypt col-6 p-4 mx-lg-3" onclick="criptografar()">
                     <p>Criptografar</p>
                 </button>
-                <button class="decrypt col-6" onclick="descriptografar()">
+                <button class="decrypt col-6 p-4 mx-lg-3" onclick="descriptografar()">
                     <p>Descriptografar</p>
                 </button>
             </div>
@@ -52,7 +45,7 @@
         <div class="card-crypto col-12 col-lg-4 bg-white  ">
             <div id="boxText" class="mt-lg-0 mt-4 boxText">
                 <div class="text-center">
-                    <img class="mb-4" src="./assets/High_quality_products.svg" alt="">
+                    <img class="mb-4 d-none d-md-block" src="./assets/High_quality_products.svg" alt="">
                     <span class="">Nenhuma mensagem encontrada</span>
                     <p>Digite um texto que você deseja criptografar ou descriptografar</p>
                 </div>
